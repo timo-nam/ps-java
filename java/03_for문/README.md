@@ -12,4 +12,4 @@
 
 # ⭐ 10871. X보다 작은 수
 
-* `BufferedWriter` 보다 `StringBuilder` + `System.out.println()` 조합이 더 빠를 때도 있음
+* 출력량이 적을 땐 `BufferedWriter` 보다 `StringBuilder` + `System.out.println()` 조합이 더 빠를 수 있음
