@@ -1,6 +1,5 @@
 # ⭐⭐ 완주하지 못한 선수
 
-
 * `java.util.HashMap`은 thread-`unsafe` 자료구조
 * `java.util.Hashtable`은 thread-`safe` 자료구조
 * `java.util.Map`은 `interface`
@@ -23,7 +22,6 @@
   }
   ```
 
-
 # ⭐⭐ 전화번호 목록
 
 * `java.util.Set`은 `interface`
@@ -31,3 +29,15 @@
 * `set.contains(e)`로 데이터 유무 확인
 * `set.add(e)`로 데이터 추가
 * `set.remove(e)`로 데이터 삭제
+
+# ⭐⭐ 위장
+
+* `java.util.Map.Entry`
+* `map.entrySet()`이 `Set<Map.Entry<K,V>>`를 반환
+  ```java
+  for (Map.Entry<String, Integer> e : map.entrySet()) {
+    answer *= e.getValue() + 1;
+  }
+  ```
+* `entry.getKey()`로 key 조회
+* `entry.getValue()`로 value 조회
