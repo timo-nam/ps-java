@@ -35,3 +35,7 @@
   | `string` == `another` | 0 |
   | `string` > `another` | 양수 |
 * `stringBuilder.charAt(int index)`는 'index + 1'번째 `char`를 반환
+
+# ⭐⭐ H-Index
+
+* ❗️ 가능한 최댓값, 경계에 있는 수, 극단적인 테스트 케이스를 고려하는 수학적인 부분이 중요
