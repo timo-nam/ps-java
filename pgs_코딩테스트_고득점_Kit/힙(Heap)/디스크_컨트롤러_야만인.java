@@ -6,19 +6,10 @@ class Solution {
   public int solution(int[][] jobs) {
     int sum = 0;
     
-    Integer[][] wrapper = new Integer[jobs.length][];
-    
-    for (int i = 0; i < jobs.length; i++) {
-      wrapper[i] = new Integer[2];
-      for (int j = 0; j < 2; j++) {
-        wrapper[i][j] = jobs[i][j];
-      }
-    }
-    
-    Arrays.sort(wrapper, new Comparator<Integer[]>() {
+    Arrays.sort(jobs, new Comparator<int[]>() {
       @Override
-      public int compare(Integer[] a1, Integer[] a2) {
-        return a1[0] - a2[0];
+      public int compare(int[] o1, int[] o2) {
+        return o1[0] - o2[0];
       }
     });
     
@@ -33,13 +24,13 @@ class Solution {
     
     int i = 0;
     int ms = 0;
-    while (i < wrapper.length) {
-      if (waitingQ.isEmpty() && ms < wrapper[i][0]) {
-        ms = wrapper[i][0];
+    while (i < jobs.length) {
+      if (waitingQ.isEmpty() && ms < jobs[i][0]) {
+        ms = jobs[i][0];
       }
       
-      while (i < wrapper.length && wrapper[i][0] <= ms) {
-        waitingQ.add(new Task(wrapper[i]));
+      while (i < jobs.length && jobs[i][0] <= ms) {
+        waitingQ.add(new Task(jobs[i]));
         i++;
       }
       
@@ -52,7 +43,7 @@ class Solution {
       sum += ms - waitingQ.poll().in;
     }
     
-    return sum / wrapper.length;
+    return sum / jobs.length;
   }
 }
 
@@ -60,7 +51,7 @@ class Task {
   int in;
   int during;
   
-  Task(Integer[] job) {
+  Task(int[] job) {
     in = job[0];
     during = job[1];
   }
