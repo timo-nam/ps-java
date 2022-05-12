@@ -19,4 +19,4 @@
 * `java.util.Stack`은 인터페이스가 아닌 구현체
 * `stack.push(item)`로 데이터 추가
 * `stack.peek()`으로 데이터 조회
-* `queue.pop()`으로 데이터 조회 + 삭제
+* `stack.pop()`으로 데이터 조회 + 삭제
