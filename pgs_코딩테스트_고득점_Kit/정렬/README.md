@@ -1,6 +1,6 @@
 # ⭐⭐ K번째수
 
-* `Arrays.copyOf(원시타입[] original, int newLength)`로 배열 깊은복사
+* `Arrays.copyOf(타입[] original, int newLength)`로 배열 깊은복사
 * `Arrays.sort(Object[] a, int fromIndex, int toIndex)`로 구간 정렬
 
 # ⭐⭐⭐ 가장 큰 수
