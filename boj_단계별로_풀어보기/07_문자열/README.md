@@ -19,4 +19,5 @@
 
 * Switch문에서 `String`이 case로 올 수 있음
 * `string.substring(int beginIndex, int endIndex)`는 슬라이싱 한 `String`을 반환
-* `string.equals(Object anObject)`로 `string`과 `anObject.toString()`이 같은 값인지 판별
+* `string.equals(Object anObject)`로 `string`과 `anObject.toString()`이 같은 값인지 판별 (incovertible type 간의 비교는 항상 false 반환)
+
