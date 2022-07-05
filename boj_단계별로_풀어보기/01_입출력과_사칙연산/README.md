@@ -1,6 +1,6 @@
 # ⭐ 2557. Hello World
 
-* `java.lang` 계열 패키지 아래 클래스는 자동으로 import
+* `java.lang` 패키지 아래 클래스는 자동으로 import
 
 # ⭐ 10171. 고양이
 
