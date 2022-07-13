@@ -41,3 +41,8 @@
   ```
 * `entry.getKey()`로 key 조회
 * `entry.getValue()`로 value 조회
+
+# ⭐️ 폰켓몬
+
+* `Math.min(a, b)`, `Math.max(a, b)`로 코드를 깔끔하게 할 수 있음
+
