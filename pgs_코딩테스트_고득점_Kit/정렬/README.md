@@ -17,14 +17,20 @@
     }
   });
   ```
-* `i1`이 앞, `i2`가 뒤 `compare()`의 반환값이 `양수`면 자리를 바꿈
+* `i1`이 앞, `i2`가 뒤
+* `compare()`의 반환값은 선후관계만 정의, 그걸 갖고 어떻게 정렬하는 건 알고리즘의 역할
+* 반환값이 `양수`: i1이 i2보다 먼저
+* 반환값이 `0`: i1과 i2는 같은 순서
+* 반환값이 `음수`: i1이 i2보다 나중
 * 위와 아래의 `compare()`은 같은 기능을 수행
   ```java
   public int compare(Integer i1, Integer i2) {
     if (i1 > i2) {
       return 999;
-    } else {
-      return -999; // return 0; 
+    } else if (i1 == i2) {
+      return 0; 
+    } else { // i1 < i2
+      return -999
     }
   }
   ```
