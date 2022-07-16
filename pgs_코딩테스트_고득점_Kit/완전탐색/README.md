@@ -23,3 +23,8 @@
       i = 2; // i = new Integer(2)
   }
   ```
+
+# ⭐⭐ 모음 사전
+
+* ❗️ 이걸 완전탐색으로 풀면 B급
+* `string.indexOf(int ch)`, `string.indexOf(String str)`은 가장 처음 나타나는 인덱스를 반환 없으면 -1 반환
