@@ -28,3 +28,8 @@
 
 * ❗️ 이걸 완전탐색으로 풀면 B급
 * `string.indexOf(int ch)`, `string.indexOf(String str)`은 가장 처음 나타나는 인덱스를 반환 없으면 -1 반환
+
+# ⭐ 카펫
+
+* ❗️ 근의 공식으로 풀어야 A급
+* `Math.sqrt()`가 루트, 반환타입은 `double`
